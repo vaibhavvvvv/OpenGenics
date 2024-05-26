@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* antd css below */
+/* App.css */
+:root {
+  --main-bg-color-light: #ffe0ff;
+  --main-text-color-light: #001529;
+  --main-bg-color-dark: #2a1433;
+  --main-text-color-dark: #fff;
+}
+
+.site-layout {
+  transition: margin-left 0.3s;
+}
+
+.dark-theme {
+  background: var(--main-bg-color-dark);
+  color: var(--main-text-color-dark);
+}
+
+.light-theme {
+  background: var(--main-bg-color-light);
+  color: var(--main-text-color-light);
+  
+}
+
+
+.header {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-theme .ant-layout .ant-layout-sider {
+  background-color: var(--sider-bg-color-dark);
+  color: var(--sider-text-color-dark);
+}
+.ant-menu-dark {
+  background: none;
+}
+
+.light-theme .ant-layout .ant-layout-sider {
+  background-color: var(--sider-bg-color-light);
+  color: var(--sider-text-color-light);
+}
+
+.ant-menu-dark .ant-menu-item-selected, .ant-menu-dark .ant-menu-item-selected {
+  background-color: #b99eb1;
+}
+
+.ant-card .ant-card-head .ant-card-head-title{
+  color:"pink"
+}
+.ant-modal .ant-modal-content {
+  background-color: #ab5781;
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.right-content {
+  margin-right: 16px;
+}
+
+/* LoginPage CSS */
+.login-navbar {
+  background-color: #2a1433;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-button {
+  margin-right: 16px;
+}
+
+.login-button {
+  margin-left: 16px;
+}
+img {
+  width: 100%;
+}
